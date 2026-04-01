@@ -1,0 +1,74 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+.dashboard {
+    display: none;
+}
+
+.card {
+    background: rgba(255,255,255,0.3);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.chatbox {
+    margin-top: 15px;
+}
+
+#chat {
+    height: 100px;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.logout {
+    background: red;
+    color: white;
+}
+.chatbox button {
+    margin-top: 5px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Classroom Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Login -->
+<div class="container" id="loginBox">
+    <h1>🎓 Smart Assistant</h1>
+    <input type="text" id="roll" placeholder="Enter Roll Number">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- Dashboard -->
+<div class="container dashboard" id="dashboard">
+    <h2 id="studentName"></h2>
+
+    <div class="card">
+        <h3>📈 Attendance</h3>
+        <p id="attendance"></p>
+    </div>
+
+    <div class="card">
+        <h3>⏰ Next Class</h3>
+        <p id="nextClass"></p>
+    </div>
+
+    <div class="card">
+        <h3>📌 Tasks</h3>
+        <p id="tasks"></p>
+    </div>
+
+    <!-- Chatbot -->
+    <div class="chatbox">
+        <h3>💬 Assistant</h3>
+        <div id="chat"></div>
+        <input type="text" id="userInput" placeholder="Ask something...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startVoice()">🎤 Speak</button>
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
